@@ -21,4 +21,5 @@ $router->group(['prefix' => 'api'], function ($router) {
 	$router->get('/posts', ['as' => 'posts.index', 'uses' => 'PostController@index']);
 	$router->post('/posts', ['as' => 'posts.store', 'uses' => 'PostController@store']);
 	$router->put('/posts/{id}', ['as' => 'posts.update', 'uses' => 'PostController@update']);
+	$router->delete('/posts/{id}', ['as' => 'posts.destroy', 'uses' => 'PostController@destroy']);
 });
